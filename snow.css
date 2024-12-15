@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    overflow-y: scroll; /* Разрешить вертикальную прокрутку */
+    background-color: #282c34; /* Цвет фона */
+    position: relative; /* Позиционирование для родительского элемента */
+}
+
+.snowflake {
+    position: absolute;
+    top: 0; /* Начальная позиция сверху */
+    color: white;
+    font-size: 2em; /* Увеличенный размер снежинки */
+    opacity: 0.8;
+    animation: fall linear infinite;
+    z-index: 1000; /* Убедитесь, что снежинки находятся поверх всех элементов */
+}
+
+
+/* Анимация падения */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(270vh); /* Падает до 270vh */
+    }
+}
+
+/* Генерация снежинок с разными длительностями анимации */
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s; /* Длительность анимации */
+    animation-delay: 0.569s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 11s; /* Длительность анимации */
+    animation-delay: 0.278s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 10.5s; /* Длительность анимации */
+    animation-delay: 0.189s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 11.5s; /* Длительность анимации */
+    animation-delay: 0.16s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 9s; /* Длительность анимации */
+    animation-delay: 0.372s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 8ю3s; /* Длительность анимации */
+    animation-delay: 0.756s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-duration: 9.6s; /* Длительность анимации */
+    animation-delay: 0.44s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 12s; /* Длительность анимации */
+    animation-delay: 0.41s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(9) {
+    left: 90%;
+    animation-duration: 7.2s; /* Длительность анимации */
+    animation-delay: 0.37s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(10) {
+    left: 50%;
+    animation-duration: 8.98s; /* Длительность анимации */
+    animation-delay: 0.5s; /* Задержка перед началом анимации */
+}
+
+/* Задержка для оставшихся снежинок с уменьшением длительности */
+.snowflake:nth-child(11) {
+    left: 15%;
+    animation-duration: 10.3s; /* Длительность анимации */
+    animation-delay: 0.7s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(12) {
+    left: 25%;
+    animation-duration: 11.6s; /* Длительность анимации */
+    animation-delay: 1.4s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(13) {
+    left: 35%;
+    animation-duration: 8s; /* Длительность анимации */
+    animation-delay: 1.2s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(14) {
+    left: 45%;
+    animation-duration: 7s; /* Длительность анимации */
+    animation-delay: 0.68s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(15) {
+    left: 55%;
+    animation-duration: 9s; /* Длительность анимации */
+    animation-delay: 0.2s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(16) {
+    left: 65%;
+    animation-duration: 11s; /* Длительность анимации */
+    animation-delay: 0.9s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(17) {
+    left: 75%;
+    animation-duration: 14s; /* Длительность анимации */
+    animation-delay: 0.68s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(18) {
+    left: 85%;
+    animation-duration: 11.7s; /* Длительность анимации */
+    animation-delay: 0.8s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(19) {
+    left: 95%;
+    animation-duration: 8s; /* Длительность анимации */
+    animation-delay: 0.46s; /* Задержка перед началом анимации */
+}
+
+.snowflake:nth-child(20) {
+    left: 40%;
+    animation-duration: 7s; /* Длительность анимации */
+    animation-delay: 0.2s; /* Задержка перед началом анимации */
+}
